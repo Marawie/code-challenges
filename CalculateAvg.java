@@ -4,7 +4,7 @@ public class CalculateAvg {
 
     //Write a function which calculates the average of the numbers in a given list.
     //Note: Empty arrays should return 0.
-    public static double find_average1(int[] array){
+    public double find_average1(int[] array){
         double avg = Arrays.stream(array).sum() / (double) array.length;
         return array.length == 0 ? 0 : avg;
     }

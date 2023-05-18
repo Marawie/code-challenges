@@ -9,7 +9,7 @@ public class CalculateAvg {
         return array.length == 0 ? 0 : avg;
     }
 
-    public static double find_average2(int[] array){
+    public double find_average2(int[] array){
         double sum = 0;
         for (Integer numb : array){
             sum += numb;

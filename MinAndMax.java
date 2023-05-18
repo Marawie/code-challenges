@@ -1,8 +1,7 @@
 import java.util.Arrays;
-
 public class MinAndMax {
 
-// Implements two different way to do this
+// https://www.codewars.com/kata/577a98a6ae28071780000989
     public int max(int[] list) {
         int max = Arrays.stream(list).max().getAsInt();
         return max;

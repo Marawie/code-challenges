@@ -9,14 +9,4 @@ public Integer find(final int[] array) {
     }
     return null;
 }
-// this should work tho, but didn't test it
-    public Integer find1(final int[] array) {
-        for (int i = 0 ; i< array.length; i++){
-            for (int j = 1; j<array.length -1; j++){
-                if (array[i] + 1 != array[j]){
-                    return array[j];}
-            }
-        }
-        return null;
-    }
 }

@@ -6,10 +6,11 @@ public class CreditCardMask {
         int length = str.length();
         if (length <= 3) {
             return str;
-        } else
+        } else {
             for (int i = 0; i < length - 4; i++) {
                 sb.append("#");
             }
+        }
         sb.append(str, length - 4, length);
         return sb.toString();
     }

@@ -20,7 +20,6 @@ public class JadenCasingStrings {
                     capitalizeNext = false;
                 } else {
                     c = Character.toLowerCase(c);
-
                 }
                 sb.append(c);
             }

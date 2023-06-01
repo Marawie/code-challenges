@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class TestingOneTwoThree {
+public class TestingOneTwoThree{
     //https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/
 
     public class LineNumbering {

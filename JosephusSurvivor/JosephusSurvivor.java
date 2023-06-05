@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 public class JosephusSurvivor {
-    public static int josephusSurvivor(final int n, final int k) {
+    public int josephusSurvivor(final int n, final int k) {
         List<Integer> listOfPeople = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
             listOfPeople.add(i);

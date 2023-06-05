@@ -6,8 +6,9 @@ public class HighestAndLowest {
 
     public String highAndLow(String numbers) {
         String[] numbsStr = numbers.split(" ");
-        int maxNumb = Integer.parseInt(numbsStr[0]);
-        int minNumb = Integer.parseInt(numbsStr[0]);
+        String firstNumb = numbsStr[0];
+        int maxNumb = Integer.parseInt(firstNumb);
+        int minNumb = Integer.parseInt(firstNumb);
         List<Integer> numbParsed = new ArrayList<>();
         for (String n : numbsStr) {
             int numb = Integer.parseInt(n);

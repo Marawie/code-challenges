@@ -7,7 +7,7 @@ public class DigitDigit {
 
         for (int i = 0; i < number.length(); i++) {
             int digit = Character.getNumericValue(number.charAt(i));
-            int squaredDigit = digit * digit;
+            double squaredDigit = Math.pow(digit, 2);
             result.append(squaredDigit);
         }
         return Integer.parseInt(result.toString());

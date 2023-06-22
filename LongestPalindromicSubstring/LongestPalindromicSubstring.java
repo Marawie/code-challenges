@@ -8,8 +8,8 @@ public class LongestPalindromicSubstring {
         int start = 0;
         int end = 0;
         for (int i = 0; i < length; i++) {
-            int len1 = expandAroundCenter(s, i, i);
-            int len2 = expandAroundCenter(s, i, i + 1);
+            int len1 = getPalindromeLength(s, i, i);
+            int len2 = getPalindromeLength(s, i, i + 1);
             int len = Math.max(len1, len2);
             if (len > end - start) {
                 start = i - (len - 1) / 2;
@@ -19,7 +19,7 @@ public class LongestPalindromicSubstring {
         return s.substring(start, end + 1);
     }
 
-    public int expandAroundCenter(String s, int left, int right) {
+    public int getPalindromeLength(String s, int left, int right) {
         int length = s.length();
         while (left >= 0 && right < length && s.charAt(left) == s.charAt(right)) {
             left--;
